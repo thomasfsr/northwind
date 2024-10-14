@@ -4,7 +4,7 @@ Steps with postgres in docker-compose:
   
 ```bash
 docker-compose build  
-docker-compose build -d 
+docker-compose up -d 
 ```  
   
 For default the postgres create a db called postgres as a maintainance db, but you can ignore it and use the northwind db.  
