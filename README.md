@@ -14,8 +14,7 @@ Steps with dbt-core:
 ```bash
 dbt init
   
-#hostname must be:  
-hostname = localhost  
+#hostname must be localhost 
 ```
   
 host name is 'db' if the postgres database is from the docker-compose.  
