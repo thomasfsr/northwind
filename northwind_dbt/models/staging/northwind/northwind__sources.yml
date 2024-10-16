@@ -6,8 +6,7 @@ sources:
     schema: public
     tables:
       - name: customers
-        description: >
-          All customers and its properties.
+        description: All customers and its properties.
         columns:
           - name: customer_id
             description: Primary key of the customers.
@@ -34,6 +33,29 @@ sources:
             description: Phone to contact customer.
           - name: fax
             description: Fax of customer.
-      - name: ...
-
-  - name: ...
+      - name: categories
+        description: Categories of food products
+        columns:
+        - name: category_id
+          description: primary key of the category of food
+        - name: category_name
+          description: Name of the category
+        - name: description
+          description: description of the types of food 
+        - name: picture
+          description: Empty values
+      - name: employee_territories
+        description: join of employee ID and territory ID
+        columns:
+        - name: employee_id
+        - name: territory_id
+      - name: employees
+        description: employees and their role
+      - name: order_details
+      - name: orders
+      - name: products
+      - name: region
+      - name: shippers
+      - name: suppliers
+      - name: territories
+      - name: us_states
