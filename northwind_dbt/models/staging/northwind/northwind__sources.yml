@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: northwind
+    description: This is the Postgres database of Northwind ERP company that imports and exports food all around the world.
+    schema: public
+    tables:
+      - name: customers
+        description: >
+          All customers and its properties.
+        columns:
+          - name: customer_id
+            description: Primary key of the customers.
+            data_tests:
+              - unique
+              - not_null
+          - name: company_name
+            description: Name of the customer's company
+          - name: contact_name
+            description: Name of the customer's contact
+          - name: contact_title
+            description: the customer's contact title
+          - name: address
+            description: Name of the street 
+          - name: city
+            description: city of customer address
+          - name: region
+            description: Optional, some countries have state or regions.
+          - name: postal_code
+            description: Postal Code of customer's address.
+          - name: country
+            description: Country of customer's address.
+          - name: phone
+            description: Phone to contact customer.
+          - name: fax
+            description: Fax of customer.
+      - name: ...
+
+  - name: ...
