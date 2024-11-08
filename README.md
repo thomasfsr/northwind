@@ -1,5 +1,10 @@
 # northwind  
   
+To this project I used Northwind database.  
+The Northwind database is a sample database that was originally created by Microsoft for use with Microsoft Access. It has become a widely used example database for learning and demonstration purposes, especially for database management systems (DBMS) and SQL query practices.  
+  
+![image](images/db_chart.png)
+  
 Steps with postgres in docker-compose:  
   
 ```bash
