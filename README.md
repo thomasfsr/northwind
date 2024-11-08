@@ -26,6 +26,13 @@ cd northwind_dbt
 ```bash
 dbt debug  
 ```
+
+The chart of the lineage created dbt docs automatically when generating dbt docs using the command:  
+```bash
+dbt docs generate
+```
+  
+![image](images/dbt-dag.png)
   
 If you are using harlequin:  
 harlequin -a postgres -h localhost -p 5432 -U postgres --password postgres -d northwind  

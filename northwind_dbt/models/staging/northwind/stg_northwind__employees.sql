@@ -3,7 +3,8 @@ source as (
     select * from {{ source('northwind','employees')}}
 ),
 employees as (
-    select employee_id,
+    select 
+    employee_id,
     last_name,
     first_name,
     title,
@@ -18,5 +19,6 @@ employees as (
     home_phone,
     extension,
     notes
+    from source
 )
-select * from source
+select * from employees
